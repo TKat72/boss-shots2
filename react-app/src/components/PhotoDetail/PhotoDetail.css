@@ -1,0 +1,58 @@
+.photo-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.photo-post {
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+.photo-post img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.photo-comments {
+    border: 5px solid silver;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.comment {
+    border: 3px solid rgb(23, 106, 240);
+    border-radius: 8px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.tads-display-nav {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+#edit-delete {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+#add-comment-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#comments-div-title{
+  margin-top: 12px;
+  margin-bottom: 3px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+}

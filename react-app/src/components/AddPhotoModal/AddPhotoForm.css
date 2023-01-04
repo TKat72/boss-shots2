@@ -1,0 +1,30 @@
+#add-photo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#add-photo-title {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+#title-input{
+  margin-bottom: 10px;
+}
+#url-input{
+  margin-bottom: 10px;
+  text-align-last: center;
+}
+
+#description-input{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#submit-button {
+  margin-bottom: 8px;
+}
