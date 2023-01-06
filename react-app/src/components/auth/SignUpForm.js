@@ -19,6 +19,15 @@ const SignUpForm = () => {
       if (data) {
         setErrors(data)
       }
+    } else {
+      // setErrors(["password not matching"])
+      const data = await dispatch(signUp(username, email, password));
+      if (data) {
+        let errors = data
+        errors.push("repeat Password: password not matching ")
+        console.log("erors", errors)
+        setErrors(errors)
+      }
     }
   };
 
@@ -46,7 +55,7 @@ const SignUpForm = () => {
     <form onSubmit={onSignUp} className="form-login">
       <div>
         {errors.map((error, ind) => (
-          <div key={ind}>{error}</div>
+          <div key={ind} className="errors">{error}</div>
         ))}
       </div>
       <div className="email-div">
@@ -83,7 +92,7 @@ const SignUpForm = () => {
           name='repeat_password'
           onChange={updateRepeatPassword}
           value={repeatPassword}
-          required={true}
+
         ></input>
       </div>
       <button className="btn-rnb" type='submit'>Sign Up</button>

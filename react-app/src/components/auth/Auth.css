@@ -50,3 +50,7 @@
 .email-label-signup {
     margin-right: 100px;
 }
+
+.errors {
+    color: red;
+}
